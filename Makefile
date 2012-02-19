@@ -151,7 +151,7 @@ objs/%.o: source/%.c
 
 objs/%.o: source/%.cpp
 	@echo Compiling $<...
-	@$(CC) $(CFLAGS) $(CPPFLAGS) $< -o $@
+	@$(CPP) $(CFLAGS) $(CPPFLAGS) $< -o $@
 
 objs/%.o: source/%.o
 	@echo Compiling $<...
